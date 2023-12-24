@@ -1,8 +1,11 @@
-# React + Vite
+# Sky Mart - Online Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [ Live Website link](https://skymartpro.netlify.app/)
 
-Currently, two official plugins are available:
+Click here for the Live Website URL: [https://skymartpro.netlify.app/](https://skymartpro.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Project Features
+- Product add to cart according to variation
+- User Can Delete My Cart Item
+- User-friendly login, registration, and Google sign-up features.
+- Profile picture and dropdown menu for enhanced user experience.

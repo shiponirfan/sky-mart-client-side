@@ -20,7 +20,7 @@ const Products = () => {
     queryKey: ["products"],
     queryFn: async () => {
       const res = await axios.get(
-        `http://localhost:5000/api/v1/products?title=${searchfield}&sort=${selectedHandleSort}`
+        `https://sky-mart-server-side.vercel.app/api/v1/products?title=${searchfield}&sort=${selectedHandleSort}`
       );
       return res.data;
     },

@@ -19,7 +19,7 @@ const MyCartCard = ({ cartItem, refetch }) => {
     mutationKey: ["setRemove", user?.email],
     mutationFn: async (removeData) => {
       return await axios.delete(
-        `http://localhost:5000/api/v1/cart/${removeData}`
+        `https://sky-mart-server-side.vercel.app/api/v1/cart/${removeData}`
       );
     },
     onSuccess: () => {

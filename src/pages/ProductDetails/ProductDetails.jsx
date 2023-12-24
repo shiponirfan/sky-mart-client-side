@@ -18,7 +18,7 @@ const ProductDetails = () => {
   const { isLoading, data: product } = useQuery({
     queryKey: ["product"],
     queryFn: async () => {
-      const res = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
+      const res = await axios.get(`https://sky-mart-server-side.vercel.app/api/v1/product/${id}`);
       return res.data;
     },
   });
@@ -26,7 +26,7 @@ const ProductDetails = () => {
   const { mutate: addToCart } = useMutation({
     mutationKey: ["addToCart", user?.email],
     mutationFn: async (cartData) => {
-      return await axios.post("http://localhost:5000/api/v1/cart", cartData);
+      return await axios.post("https://sky-mart-server-side.vercel.app/api/v1/cart", cartData);
     },
     onSuccess: () => {
       toast.success("Added To Cart Successfully", {

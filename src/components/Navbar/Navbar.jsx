@@ -22,7 +22,7 @@ const Navbar = () => {
     queryKey: ["carts", user?.email],
     queryFn: async () => {
       const res = await axios.get(
-        `http://localhost:5000/api/v1/carts?user=${user?.email}`
+        `https://sky-mart-server-side.vercel.app/api/v1/carts?user=${user?.email}`
       );
       return res.data;
     },
